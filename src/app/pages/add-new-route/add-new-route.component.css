@@ -1,0 +1,16 @@
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.mb-3{
+  margin: 1rem;
+  padding: 0.5rem;
+}
+.form-control{
+  width: 100%;
+}
+
+

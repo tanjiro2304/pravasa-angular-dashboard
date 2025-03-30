@@ -1,0 +1,17 @@
+.main-layout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+  align-items: center;
+  width: 100%;
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+  width: 50%;
+  height: 60%
+}

@@ -1,0 +1,76 @@
+<div class="container mt-4">
+  <div class="left-panel">
+    <form (ngSubmit)="submitForm()">
+      <div class="row">
+        <!-- Company Name -->
+        <div class="col-md-6 mb-3">
+          <label for="companyName" class="form-label">Company Name</label>
+          <input type="text" class="form-control" id="companyName" [(ngModel)]="newCompany.companyName" name="companyName" required>
+        </div>
+
+        <!-- Address -->
+        <div class="col-md-6 mb-3">
+          <label for="address" class="form-label">Address</label>
+          <input type="text" class="form-control" id="address" [(ngModel)]="newCompany.address" name="address" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Helpline -->
+        <div class="col-md-6 mb-3">
+          <label for="helpline" class="form-label">Helpline</label>
+          <input type="text" class="form-control" id="helpline" [(ngModel)]="newCompany.helpline" name="helpline" required>
+        </div>
+
+        <!-- Email -->
+        <div class="col-md-6 mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" [(ngModel)]="newCompany.email" name="email" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Fleet Size -->
+        <div class="col-md-6 mb-3">
+          <label for="fleetSize" class="form-label">Fleet Size</label>
+          <input type="number" class="form-control" id="fleetSize" [(ngModel)]="newCompany.fleetSize" name="fleetSize" required>
+        </div>
+
+        <!-- Number of Employees -->
+        <div class="col-md-6 mb-3">
+          <label for="noOfEmployees" class="form-label">Number of Employees</label>
+          <input type="number" class="form-control" id="noOfEmployees" [(ngModel)]="newCompany.noOfEmployees" name="noOfEmployees" required>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary" style="width: 100%">Submit</button>
+    </form>
+  </div>
+  <div class="right-panel">
+    <table class="table">
+      <thead>
+      <tr>
+
+        <th scope="col">Company Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Helpline</th>
+        <th scope="col">Fleet</th>
+        <th scope="col">No Of Employees</th>
+        <th scope="col">Edit</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor ="let c of companies">
+        <td>{{c.companyName}}</td>
+        <td>{{ c.address }}</td>
+        <td>{{ c.helpline }}</td>
+        <td>{{ c.fleetSize }}</td>
+        <td>{{ c.noOfEmployees }}</td>
+        <td><button type="submit" class="btn btn-primary">Edit</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+d
