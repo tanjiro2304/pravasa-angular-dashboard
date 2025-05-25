@@ -1,0 +1,23 @@
+.main-layout, .row-layout, .block-layout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.main-layout{
+  width: 100%;
+  height: 100%;
+}
+
+.row-layout{
+  padding: 1.5rem
+}
+
+.block-layout{
+  width: 25rem;
+  height: 25rem;
+  flex-direction: row;
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  margin: 2rem;
+}
