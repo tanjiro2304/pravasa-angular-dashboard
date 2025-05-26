@@ -12,6 +12,7 @@
           </li>
         </ul>
         <form class="d-flex">
+          <label *ngIf="showUser">{{userDetails.email}}</label>
           <button class="btn btn-outline-primary" type="submit">Logout</button>
         </form>
       </div>

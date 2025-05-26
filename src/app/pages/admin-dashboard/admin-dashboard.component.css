@@ -1,4 +1,4 @@
-.main-layout, .row-layout, .block-layout{
+.main-layout, .row-layout, .block-layout,.image-layout{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,10 +13,18 @@
   padding: 1.5rem
 }
 
+.image-layout{
+  width: 24rem;
+  height: 22.5rem;
+}
+.block-layout:hover{
+  cursor: pointer;
+}
 .block-layout{
+
   width: 25rem;
   height: 25rem;
-  flex-direction: row;
+  flex-direction: column;
   border: 0.1rem solid black;
   border-radius: 1rem;
   margin: 2rem;

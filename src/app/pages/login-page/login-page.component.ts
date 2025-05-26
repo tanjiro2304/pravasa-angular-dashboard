@@ -32,6 +32,7 @@ export class LoginPageComponent {
     this.userService.login(this.userDetails).subscribe({
       next : (value) => {
         this.setUserDetails(value)
+        sessionStorage.setItem('userDetails', JSON.stringify(this.userDetails))
         this.router.navigateByUrl('/admin-dashboard').then(r => alert("Login successfully"));
       },
       error : (error) => alert("Error occurred")
